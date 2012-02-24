@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+	<Animals>
+		<AnimalsRecord>
+			<name>Zebra</name>
+			<desc>A black and white striped animal.</desc>
+		</AnimalsRecord>
+		<AnimalsRecord>
+			<name>Lion</name>
+			<desc>A giant cat</desc>
+		</AnimalsRecord>
+		<AnimalsRecord>
+			<name>Wallaby</name>
+			<desc>A giant marsupial</desc>
+		</AnimalsRecord>
+		<AnimalsRecord>
+			<name>Rabbit</name>
+			<desc>Hares with hair</desc>
+		</AnimalsRecord>
+	</Animals>
+	<Employees>
+		<EmployeesRecord>
+			<name>Bob Brown</name>
+			<salary>20000.5</salary>
+		</EmployeesRecord>
+		<EmployeesRecord>
+			<name>Billy Bucksworth</name>
+			<salary>800.0</salary>
+		</EmployeesRecord>
+		<EmployeesRecord>
+			<name>Charlie Chin</name>
+			<salary>0.0</salary>
+		</EmployeesRecord>
+	</Employees>
+</database>

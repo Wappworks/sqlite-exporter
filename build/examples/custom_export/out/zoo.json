@@ -1,0 +1,25 @@
+{
+  "Animals": {
+    "Lion": {
+      "desc": "A giant cat",
+      "quantity": 2
+    },
+    "Rabbit": {
+      "desc": "Hares with hair",
+      "quantity": 1000
+    },
+    "Wallaby": {
+      "desc": "A giant marsupial",
+      "quantity": 5
+    },
+    "Zebra": {
+      "desc": "A black and white striped animal.",
+      "quantity": 10
+    }
+  },
+  "Employees": [
+    {"name": "Bob Brown"},
+    {"name": "Billy Bucksworth"},
+    {"name": "Charlie Chin"}
+  ]
+}

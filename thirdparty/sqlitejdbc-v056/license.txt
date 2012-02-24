@@ -1,0 +1,2 @@
+This library is licensed under the BSD license.
+http://www.zentus.com/sqlitejdbc/license.html

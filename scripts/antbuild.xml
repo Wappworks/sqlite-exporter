@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="buildjar" name="Build sqlite_exporter.jar">
+	<property name="srcpath.thirdparty" value="../thirdparty"/>
+	<property name="sqlitejdbc.version" value="sqlitejdbc-v056"/>
+	<property name="dest.path" value="../build/bin"/>
+	<property name="dest.jar" value="${dest.path}/sqlite_exporter.jar"/>
+	
+    <target name="buildjar">
+    	<mkdir dir="${dest.path}"/>
+        <jar destfile="${dest.jar}" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.wappworks.app.SqliteExporterFrame"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="../bin"/>
+            <zipfileset src="${srcpath.thirdparty}/${sqlitejdbc.version}/${sqlitejdbc.version}.jar"/>
+        </jar>
+    </target>
+</project>
