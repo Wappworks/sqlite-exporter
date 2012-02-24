@@ -2,11 +2,18 @@
 <project default="buildjar" name="Build sqlite_exporter.jar">
 	<property name="srcpath.thirdparty" value="../thirdparty"/>
 	<property name="sqlitejdbc.version" value="sqlitejdbc-v056"/>
-	<property name="dest.path" value="../build/bin"/>
-	<property name="dest.jar" value="${dest.path}/sqlite-exporter.jar"/>
+	<property name="dest.pathbase" value="../build"/>
+	
+	<property name="dest.pathjar" value="${dest.pathbase}/bin"/>
+	<property name="dest.jar" value="${dest.pathjar}/sqlite-exporter.jar"/>
+	
+	<property name="dest.pathzip" value="${dest.pathbase}"/>
+	<property name="dest.zipbin" value="${dest.pathzip}/sqlite-exporter-bin.zip"/>
+	<property name="dest.zipsrc" value="${dest.pathzip}/sqlite-exporter-src.zip"/>
+	<property name="zip.pathbase" value=".."/>
 	
     <target name="buildjar">
-    	<mkdir dir="${dest.path}"/>
+    	<mkdir dir="${dest.pathjar}"/>
         <jar destfile="${dest.jar}" filesetmanifest="mergewithoutmain">
             <manifest>
                 <attribute name="Main-Class" value="com.wappworks.app.SqliteExporterFrame"/>
@@ -16,4 +23,16 @@
             <zipfileset src="${srcpath.thirdparty}/${sqlitejdbc.version}/${sqlitejdbc.version}.jar"/>
         </jar>
     </target>
+	
+	<target name="buildzipbin" depends="buildjar">
+    	<mkdir dir="${dest.pathzip}"/>
+		<zip destfile="${dest.zipbin}" basedir="${zip.pathbase}" includes="**/build/**"/>
+	</target>
+
+	<target name="buildzipsrc">
+    	<mkdir dir="${dest.pathzip}"/>
+		<zip destfile="${dest.zipsrc}" basedir="${zip.pathbase}" excludes="**/build/**,bin/**,.git/**"/>
+	</target>
+
+	<target name="buildzipall" depends="buildzipbin, buildzipsrc"/>
 </project>
