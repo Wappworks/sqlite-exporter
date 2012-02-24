@@ -60,7 +60,7 @@ The following is a sample configuration file which:
 >     keys: {
 >       main: "name"
 >     }
->   },
+>   }
 > }
 
 ### XML output format
@@ -81,8 +81,8 @@ The following is a sample configuration file which:
 
 ### Third party library dependencies
 The application is incorporates the following third party libraries:
-- [JSON in Java](http://json.org/java/)
-- [SQLite JDBC] (http://www.zentus.com/sqlitejdbc/)
+- JSON in Java: [official site](http://json.org/java/)
+- SQLite JDBC: [official site](http://www.zentus.com/sqlitejdbc/)
 
 
 ### Build environment
