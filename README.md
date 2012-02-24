@@ -15,7 +15,7 @@ This project is licensed under the BSD license.
 
 
 ## Contributors
-The original source code was writen by Chris Khoo [Wappworks Studio](http://www.wappworks.com)
+The original source code was writen by Chris Khoo ([Wappworks Studio](http://www.wappworks.com))
 
 
 
@@ -80,7 +80,7 @@ The following is a sample configuration file which:
 ## Development Environment
 
 ### Third party library dependencies
-The application is incorporates the following third party libraries:
+The application is incorporates the following third party libraries
 - JSON in Java: [official site](http://json.org/java/)
 - SQLite JDBC: [official site](http://www.zentus.com/sqlitejdbc/)
 
