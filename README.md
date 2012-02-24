@@ -15,7 +15,7 @@ This project is licensed under the BSD license.
 
 
 ## Contributors
-The original source code was writen by Chris Khoo ([Wappworks Studio](http://www.wappworks.com))
+- Chris Khoo ([Wappworks Studio](http://www.wappworks.com))
 
 
 
