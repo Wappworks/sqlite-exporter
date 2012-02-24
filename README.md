@@ -22,27 +22,32 @@ This project is licensed under the BSD license.
 ## Using sqlite-exporter
 
 ### Software requirements
-sqlite-exporter requires Java 6 or higher to be installed on the machine
+- Java 6 or higher to be installed on the machine
 
 ### Launching the application
 From the commandline:
+
 - Go to the bin subdirectory
 - Run 'java -jar sqlite-exporter.jar'. The application window will appear.
 
 Through the Windows explorer:
+
 - Double click on 'sqlite-exporter.jar'. The application window will appear.
 
 ### Filtering the export
 The application's export is filtered by setting up a JSON-encoded export configuration file. The primary sections are as follows and they are all optional:
+
 - common: Common configuration settings that apply to all exports
 - xml: XML export specific configuration
 - json: JSON export specific configuration
 
 Each primary section may include the following configuration options:
+
 - keys: A JSON-encoded object containing key-value pairs mapping table names to the name of the primary field
 - excludes: A JSON-encoded array containing a list of tables and/or fields to exclude from export
 
 The following is a sample configuration file which:
+
 - for all exports,
   - exclude the 'test' table
   - exclude the 'id' field from the 'main' table
@@ -50,17 +55,29 @@ The following is a sample configuration file which:
   - use 'name' as the primary field for the 'main' table export
 
 > {
+
 >   common: {
+
 >     excludes: [
+
 >       "test",
+
 >       "main.id"
+
 >     ]
+
 >   },
+
 >   xml: {
+
 >     keys: {
+
 >       main: "name"
+
 >     }
+
 >   }
+
 > }
 
 ### XML output format
