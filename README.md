@@ -54,19 +54,19 @@ The following is a sample configuration file which:
 - for JSON exports,
   - use 'name' as the primary field for the 'main' table export
 
-  {
-    common: {
-      excludes: [
-        "test",
-        "main.id"
-      ]
-    },
-    xml: {
-      keys: {
-        main: "name"
-      }
+    {
+        common: {
+            excludes: [
+                "test",
+                "main.id"
+            ]
+        },
+        xml: {
+            keys: {
+                main: "name"
+            }
+        }
     }
-  }
 
 ### XML output format
 - The root XML node is always 'database'.
