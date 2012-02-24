@@ -1,12 +1,12 @@
 # SQLite to XML/JSON exporter
 
+sqlite-exporter is a Java windowed application that exports a target SQLite database to XML and/or JSON.
 
+The code has been written so that it is can be easily adapted to a command line version.
 
-## Introduction
-sqlite-exporter is a Java window application that exports a target SQLite database to XML and/or JSON.
-
-The code has been written so that it is easy to create a command line version. I'll leave it to other industrious Open Source contributors to make the appropriate changes
-
+## Features
+- cross-platform Java application
+- Control of the exported fields and/or tables via a configuration file
 
 
 ## Licensing
