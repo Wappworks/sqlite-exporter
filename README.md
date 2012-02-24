@@ -1,9 +1,9 @@
-# SQLite to XML/JSON converter
+# SQLite to XML/JSON exporter
 
 
 
 ## Introduction
-sqlite-converter is a Java window application that exports a target SQLite database to XML and/or JSON.
+sqlite-exporter is a Java window application that exports a target SQLite database to XML and/or JSON.
 
 The code has been written so that it is easy to create a command line version. I'll leave it to other industrious Open Source contributors to make the appropriate changes
 
@@ -19,18 +19,18 @@ The original source code was writen by Chris Khoo [Wappworks Studio](http://www.
 
 
 
-## Using sqlite-converter
+## Using sqlite-exporter
 
 ### Software requirements
-sqlite-converter requires Java 6 or higher to be installed on the machine
+sqlite-exporter requires Java 6 or higher to be installed on the machine
 
 ### Launching the application
 From the commandline:
 - Go to the bin subdirectory
-- Run 'java -jar sqlite-converter.jar'. The application window will appear.
+- Run 'java -jar sqlite-exporter.jar'. The application window will appear.
 
 Through the Windows explorer:
-- Double click on sqlite-converter.jar. The application window will appear.
+- Double click on 'sqlite-exporter.jar'. The application window will appear.
 
 ### Filtering the export
 The application's export is filtered by setting up a JSON-encoded export configuration file. The primary sections are as follows and they are all optional:

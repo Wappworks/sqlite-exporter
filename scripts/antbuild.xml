@@ -3,7 +3,7 @@
 	<property name="srcpath.thirdparty" value="../thirdparty"/>
 	<property name="sqlitejdbc.version" value="sqlitejdbc-v056"/>
 	<property name="dest.path" value="../build/bin"/>
-	<property name="dest.jar" value="${dest.path}/sqlite_exporter.jar"/>
+	<property name="dest.jar" value="${dest.path}/sqlite-exporter.jar"/>
 	
     <target name="buildjar">
     	<mkdir dir="${dest.path}"/>
