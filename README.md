@@ -54,6 +54,8 @@ The following is a sample configuration file which:
 - for JSON exports,
   - use 'name' as the primary field for the 'main' table export
 
+The sample JSON config file:
+
     {
         common: {
             excludes: [
