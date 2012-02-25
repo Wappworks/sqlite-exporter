@@ -10,7 +10,7 @@ The code has been written so that it is can be easily adapted to a command line 
 
 
 ## Licensing
-This project is licensed under the BSD license.
+This project is licensed under the BSD license. Please refer to the LICENSE file for more information.
 
 
 
@@ -87,7 +87,7 @@ The sample JSON config file:
 ## Development Environment
 
 ### Third party library dependencies
-The application is incorporates the following third party libraries:
+The application incorporates the following third party libraries:
 
 - JSON in Java: [official site](http://json.org/java/)
 - SQLite JDBC: [official site](http://www.zentus.com/sqlitejdbc/)
